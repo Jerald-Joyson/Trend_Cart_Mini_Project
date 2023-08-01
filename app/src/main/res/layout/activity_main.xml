@@ -67,10 +67,12 @@
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/mvBtn1"
                 android:layout_width="6mm"
                 android:layout_height="2mm"
                 android:src="@drawable/inactive_dash"/>
             <ImageView
+                android:id="@+id/mvBtn2"
                 android:layout_width="6mm"
                 android:layout_height="2mm"
                 android:src="@drawable/inactive_dash"

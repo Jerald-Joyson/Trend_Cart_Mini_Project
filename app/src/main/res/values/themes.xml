@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.TrendCart" parent="Base.Theme.TrendCart" />
+    <style name="BlackCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/black</item>
+    </style>
 </resources>

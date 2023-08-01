@@ -72,12 +72,14 @@
                 android:src="@drawable/active_dash"/>
 
             <ImageView
+                android:id="@+id/mvBtn2"
                 android:layout_width="6mm"
                 android:layout_height="2mm"
                 android:src="@drawable/inactive_dash"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"/>
             <ImageView
+                android:id="@+id/mvBtn3"
                 android:layout_width="6mm"
                 android:layout_height="2mm"
                 android:src="@drawable/inactive_dash" />
