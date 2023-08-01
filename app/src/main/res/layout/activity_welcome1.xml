@@ -67,18 +67,18 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="5mm"
+                android:layout_width="6mm"
                 android:layout_height="2mm"
                 android:src="@drawable/active_dash"/>
 
             <ImageView
-                android:layout_width="5mm"
+                android:layout_width="6mm"
                 android:layout_height="2mm"
                 android:src="@drawable/inactive_dash"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"/>
             <ImageView
-                android:layout_width="5mm"
+                android:layout_width="6mm"
                 android:layout_height="2mm"
                 android:src="@drawable/inactive_dash" />
         </LinearLayout>
@@ -89,7 +89,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@drawable/rounded_corner_fill_primary"
-            android:text="Next"/>
+            android:text="Next"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:padding="15dp"/>
     </LinearLayout>
 
 </LinearLayout>

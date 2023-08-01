@@ -20,6 +20,6 @@ public class welcomeActivity2 extends AppCompatActivity {
         backBtn = findViewById(R.id.backBtn);
 
         backBtn.setOnClickListener(v -> onBackPressed());
-        nextBtn.setOnClickListener(v -> startActivity(new Intent(welcomeActivity2.this, welcomeActivity3.class)));
+        nextBtn.setOnClickListener(v -> startActivity(new Intent(welcomeActivity2.this, MainActivity.class)));
     }
 }
