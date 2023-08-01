@@ -13,6 +13,15 @@
         android:theme="@style/Theme.TrendCart"
         tools:targetApi="31">
         <activity
+            android:name=".welcomeActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".welcomeActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".welcomeActivity1"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>

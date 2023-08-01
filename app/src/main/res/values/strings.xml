@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Trend Cart</string>
+
+    //Headings
+    <string name="heading_one">Welcome to Trend Cart</string>
+    <string name="heading_two">We provide best quality products to your family </string>
+    <string name="heading_three">Fast and responsibility delivery by our courir</string>
+    //Description
+    <string name="desc_one"> A shopping app brings the convenience of shopping right to your fingertips, allowing you to browse and purchase products anytime, anywhere.</string>
+    <string name="desc_two">Discover a vast selection of products from renowned brands and emerging designers. With intuitive search features and personalized recommendations, finding exactly what youre looking for has never been simpler. </string>
+    <string name="desc_three">Delivery is a crucial aspect of an online shopping app, ensuring that customers receive their purchased items conveniently and efficiently</string>
 </resources>
