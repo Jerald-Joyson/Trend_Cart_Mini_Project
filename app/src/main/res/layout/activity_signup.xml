@@ -116,8 +116,9 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="45dp"
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_corner_fill_black"
+                android:background="@drawable/rounded_corner_fill_primary"
                 android:padding="5dp"
+                android:backgroundTint="@color/black"
                 android:text="CREATE AN ACCOUNT"
                 android:textColor="@color/white"
                 android:textSize="16dp" />
