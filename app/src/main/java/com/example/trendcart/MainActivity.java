@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         backBtn.setOnClickListener(v -> onBackPressed());
         loginBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, LoginActivity.class)));
-//        createAccBtn.setOnClickListener(v -> startActivity(new Intent(welcomeActivity3.this, MainActivity.class)));
+        createAccBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SignupActivity.class)));
         mvBtn1 = findViewById(R.id.mvBtn1);
         mvBtn1.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, welcomeActivity1.class)));
         mvBtn2 = findViewById(R.id.mvBtn2);
