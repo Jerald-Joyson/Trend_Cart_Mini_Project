@@ -8,7 +8,7 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="vertical"
         android:layout_marginTop="24dp"
         android:layout_marginLeft="24dp"
@@ -21,35 +21,37 @@
             android:scaleType="fitCenter"
             android:background="?attr/selectableItemBackgroundBorderless"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="-12dp"
+            android:text="Category"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+    </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:fillViewport="true">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <TextView
+
+
+            <FrameLayout
+                android:id="@+id/container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Category"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="28dp" />
+                android:layout_height="wrap_content">
 
+                <include
+                    android:id="@+id/category_list_item"
+                    layout="@layout/category_list_items" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingRight="24dp"
-                android:paddingLeft="24dp"
-                android:paddingTop="10dp">
-
-            </LinearLayout>
-        </LinearLayout>
+            </FrameLayout>
     </ScrollView>
     <FrameLayout
         android:id="@+id/container2"

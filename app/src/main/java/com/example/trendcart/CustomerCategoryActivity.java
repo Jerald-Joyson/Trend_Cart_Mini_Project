@@ -7,12 +7,14 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class CustomerCategoryActivity extends AppCompatActivity {
-    LinearLayout bottomNavigation;
+    LinearLayout bottomNavigation,categoryListItem;
+    LinearLayout categoryGamingList;
     ImageView homeNavi,categoryNavi,cartNavi,favoriteNavi,profileNavi;
     ImageButton backBtn;
     @Override
@@ -21,6 +23,8 @@ public class CustomerCategoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_customer_category);
 
         bottomNavigation = findViewById(R.id.bottomNavi);
+        categoryListItem = findViewById(R.id.category_list_item);
+        categoryGamingList = findViewById(R.id.categoryGamingList);
         homeNavi = findViewById(R.id.home_screen_navi);
         categoryNavi = findViewById(R.id.category_screen_navi);
         cartNavi = findViewById(R.id.cart_screen_navi);
@@ -35,5 +39,7 @@ public class CustomerCategoryActivity extends AppCompatActivity {
         cartNavi.setOnClickListener(v -> startActivity(new Intent(CustomerCategoryActivity.this, CustomerCartActivity.class)));
         favoriteNavi.setOnClickListener(v -> startActivity(new Intent(CustomerCategoryActivity.this, CustomerFavoriteActivity.class)));
         profileNavi.setOnClickListener(v -> startActivity(new Intent(CustomerCategoryActivity.this, CustomerProfileActivity.class)));
+        categoryGamingList.setOnClickListener(v -> startActivity(new Intent(CustomerCategoryActivity.this, CustomerGamingActivity.class)));
+
     }
 }
