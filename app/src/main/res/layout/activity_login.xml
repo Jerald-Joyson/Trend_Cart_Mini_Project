@@ -113,7 +113,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/loginbtn"
+                android:id="@+id/custLoginBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="center"

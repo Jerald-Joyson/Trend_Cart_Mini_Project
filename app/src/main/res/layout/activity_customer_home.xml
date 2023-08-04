@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerHomeActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:gravity="left|center">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_arrow"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Good Morning"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:paddingLeft="24dp"
+                android:paddingTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="24dp"
+                android:paddingLeft="24dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Customer Name"
+                    android:textColor="@color/black"
+                    android:textSize="28dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/alarm_icon" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="70dp">
+        <include
+            android:id="@+id/bottomNavi"
+            layout="@layout/bottom_navigation" />
+    </FrameLayout>
+</LinearLayout>

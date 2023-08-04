@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class LoginActivity extends AppCompatActivity {
     ImageButton backBtn;
     TextView adminLogin,signUp;
+    Button loginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,8 @@ public class LoginActivity extends AppCompatActivity {
         signUp.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, SignupActivity.class)));
         backBtn = findViewById(R.id.backBtn);
         backBtn.setOnClickListener(v -> onBackPressed());
-
+        loginBtn = findViewById(R.id.custLoginBtn);
+        loginBtn.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, CustomerHomeActivity.class)));
 
     }
 }

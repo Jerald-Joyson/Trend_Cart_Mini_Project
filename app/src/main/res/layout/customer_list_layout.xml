@@ -1,0 +1,51 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/top_rounded"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:paddingRight="50dp"
+    android:paddingLeft="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/my_profile_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="My Profile"
+        android:fontFamily="@font/poppins_bold"
+        android:drawableRight="@drawable/round_arrow_forward"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/edit_pass_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Edit Password"
+        android:fontFamily="@font/poppins_bold"
+        android:drawableRight="@drawable/round_arrow_forward"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/your_orders_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Your Orders"
+        android:fontFamily="@font/poppins_bold"
+        android:drawableRight="@drawable/round_arrow_forward"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Logout"
+        android:fontFamily="@font/poppins_bold"
+        android:drawableRight="@drawable/round_arrow_forward"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
