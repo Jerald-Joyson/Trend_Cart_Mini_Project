@@ -4,89 +4,168 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomerHomeActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".CustomerHomeActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical"
-        android:layout_marginTop="24dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="24dp"
-        android:gravity="left|center">
+        android:layout_marginTop="18dp"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
         <ImageButton
             android:id="@+id/backBtn"
-            android:layout_width="50dp"
+            android:layout_width="48dp"
             android:layout_height="match_parent"
-            android:src="@drawable/back_arrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
+            android:src="@drawable/back_arrow" />
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingTop="10dp"
+        android:text="Good Morning"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingTop="0dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Customer Name"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alarm_icon" />
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Good Morning"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                android:paddingLeft="24dp"
-                android:paddingTop="10dp"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingRight="24dp"
-                android:paddingLeft="24dp"
-                android:paddingTop="0dp">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Customer Name"
-                    android:textColor="@color/black"
-                    android:textSize="28dp" />
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="end"
-                    android:padding="8dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/alarm_icon" />
-
-            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical">
+
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/viewPagerImageSlider"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingStart="80dp"
-                    android:paddingEnd="80dp"/>
+                    android:paddingEnd="80dp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded_corner_fill_primary"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Trending Deals"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        app:riv_corner_radius="20dp"
+                        android:adjustViewBounds="true"
+                       android:src="@drawable/img_1"
+                        app:riv_border_width="2dp">
+                    </com.makeramen.roundedimageview.RoundedImageView>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        app:riv_corner_radius="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_2"
+                        app:riv_border_width="2dp">
+                    </com.makeramen.roundedimageview.RoundedImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        app:riv_corner_radius="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_4"
+                        app:riv_border_width="2dp">
+                    </com.makeramen.roundedimageview.RoundedImageView>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        app:riv_corner_radius="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_3"
+                        app:riv_border_width="2dp">
+                    </com.makeramen.roundedimageview.RoundedImageView>
 
-
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
+
     <FrameLayout
         android:id="@+id/container2"
         android:layout_width="match_parent"
-        android:background="@color/white"
-        android:layout_height="70dp">
+        android:layout_height="60dp"
+        android:background="@color/white">
+
         <include
             android:id="@+id/bottomNavi"
             layout="@layout/bottom_navigation" />

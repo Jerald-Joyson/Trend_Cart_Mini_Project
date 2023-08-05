@@ -8,12 +8,14 @@ import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class CustomerCategoryActivity extends AppCompatActivity {
-    LinearLayout bottomNavigation,categoryListItem;
+    LinearLayout bottomNavigation;
+    GridLayout categoryListItem;
     LinearLayout categoryGamingList;
     ImageView homeNavi,categoryNavi,cartNavi,favoriteNavi,profileNavi;
     ImageButton backBtn;

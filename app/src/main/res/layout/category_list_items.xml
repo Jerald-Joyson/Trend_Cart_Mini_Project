@@ -1,220 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="30dp">
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:rowCount="4">
+
+    <!-- Row 1, Column 1 -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:background="@drawable/border_shadow"
         android:gravity="center"
-        android:layout_marginBottom="30dp">
-        <LinearLayout
+        android:orientation="vertical">
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_shadow"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_marginRight="20dp">
+            android:src="@drawable/grape" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/grape" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-10dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:text="Fruits"
-                android:textSize="18dp" />
-        </LinearLayout>
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_shadow"
-            android:orientation="vertical"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
             android:gravity="center"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp">
+            android:text="Fruits"
+            android:textSize="18dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/multiple_devices" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:layout_marginTop="-5dp"
-                android:gravity="center"
-                android:text="Electronics"
-                android:textSize="18dp" />
-        </LinearLayout>
     </LinearLayout>
+
+    <!-- Row 1, Column 2 -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:padding="5dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_shadow"
         android:gravity="center"
-        android:layout_marginBottom="30dp">
-        <LinearLayout
+        android:orientation="vertical">
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/border_shadow"
-            android:gravity="center"
-            android:padding="10dp"
-            android:layout_marginRight="20dp">
+            android:src="@drawable/multiple_devices" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/fashion_model" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-5dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:text="Fashion"
-                android:textSize="18dp" />
-        </LinearLayout>
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_shadow"
-            android:orientation="vertical"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
             android:gravity="center"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp">
+            android:text="Electronics"
+            android:textSize="18dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/furniture" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-5dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:text="Furniture"
-                android:textSize="18dp" />
-        </LinearLayout>
     </LinearLayout>
+
+    <!-- Row 2, Column 1 -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_shadow"
         android:gravity="center"
-        android:layout_marginBottom="30dp">
-        <LinearLayout
+        android:orientation="vertical">
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_shadow"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="10dp"
-            android:layout_marginRight="20dp">
+            android:src="@drawable/fashion_model" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/aroma" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-10dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:text="Beauty"
-                android:textSize="18dp" />
-        </LinearLayout>
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_shadow"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
             android:gravity="center"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ingredients" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-10dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:text="Grocery"
-                android:textSize="18dp" />
-        </LinearLayout>
+            android:text="Fashion"
+            android:textSize="18dp" />
     </LinearLayout>
+
+    <!-- Row 2, Column 2 -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_shadow"
         android:gravity="center"
-        android:layout_marginBottom="30dp">
-        <LinearLayout
-            android:id="@+id/categoryGamingList"
+        android:orientation="vertical">
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_shadow"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="10dp"
-            android:layout_marginRight="20dp">
+            android:src="@drawable/furniture" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/game_controller" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:layout_marginTop="-5dp"
-                android:text="Gaming"
-                android:textSize="18dp" />
-        </LinearLayout>
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_shadow"
-            android:orientation="vertical"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
             android:gravity="center"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp">
+            android:text="Furniture"
+            android:textSize="18dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sports" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-10dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:text="Sports"
-                android:textSize="18dp" />
-        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+
+    <!-- Row 3, Column 1 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_shadow"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aroma" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Beauty"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <!-- Row 3, Column 2 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_shadow"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ingredients" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Grocery"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <!-- Row 4, Column 1 -->
+    <LinearLayout
+        android:id="@+id/categoryGamingList"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_shadow"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_controller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Gaming"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <!-- Row 4, Column 2 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_shadow"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sports" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Sports"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</GridLayout>

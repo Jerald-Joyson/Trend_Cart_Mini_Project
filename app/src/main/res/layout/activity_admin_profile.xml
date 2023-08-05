@@ -31,7 +31,7 @@
         <TextView
             android:id="@+id/profileText"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="48dp"
             android:layout_above="@id/logoImageView"
             android:layout_alignParentTop="true"
             android:fontFamily="@font/poppins_bold"

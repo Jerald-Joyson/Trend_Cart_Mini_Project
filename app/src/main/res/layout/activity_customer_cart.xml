@@ -8,18 +8,19 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical"
-        android:layout_marginTop="24dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="24dp"
-        android:gravity="left|center">
+        android:layout_marginTop="18dp"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
         <ImageButton
             android:id="@+id/backBtn"
-            android:layout_width="50dp"
+            android:layout_width="48dp"
             android:layout_height="match_parent"
-            android:src="@drawable/back_arrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
+            android:src="@drawable/back_arrow" />
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
@@ -30,25 +31,29 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Cart"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="28dp" />
-
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingRight="24dp"
-                android:paddingLeft="24dp"
-                android:paddingTop="10dp">
-
-            </LinearLayout>
+                android:paddingRight="24dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Item Details"
+                    android:gravity="left"
+                    android:paddingLeft="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Place Orders"
+                    android:gravity="right"
+                    android:textColor="@color/my_primary"
+                    android:textSize="20dp" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
     <FrameLayout
